@@ -1,24 +1,229 @@
-body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+/* global css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+html {
+  font-size: 62.5%;
 }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 1.8rem;
+}
+
+li,
+button {
+  font-size: 2rem;
+}
+
+a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-.navbar a:hover {
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+.main-head {
+  background: #000000;
   color: #ffffff;
 }
 
+nav {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+/* hero */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), transparent),
+    url("https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #000000;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 885px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
+
+/* Styles for light theme */
+.theme-light {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+/* Styles for dark theme */
+.theme-dark {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.emoji {
+  isolation: isolate;
+}
+
+/* elements that create their a stacking context are automatically isolated */
+.footer {
+  z-index: 1;
+}
+
+/* details */
+details {
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  width: 40%;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+/* images border-radius */
+img {
+  border-radius: 1%;
+}
+
+/* texte effect*/
+.typing {
+  height: 80vh;
+}
+
+.typing-effect {
+  width: 22ch;
+  animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* color selection */
+h1::selection {
+  background-color: #99a3a4;
+}
+
+h2::selection {
+  background-color: #99a3a4;
+}
+
+h3::selection {
+  background-color: #99a3a4;
+}
+
+h4::selection {
+  background-color: #99a3a4;
+}
+
+h5::selection {
+  background-color: #99a3a4;
+}
+
+h6::selection {
+  background-color: #99a3a4;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #99a3a4;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 50px;
+}
