@@ -76,7 +76,7 @@ nav ul {
 .hero {
   min-height: 90vh;
   background: linear-gradient(rgb(0, 0, 0, 0.4), transparent),
-    url(public\medias\presentation\welcome.png); /* photo de couverture du site (body) */
+    url("https://gitlab.com/aristocat/artistocatt/-/raw/master/public/medias/presentation/welcome.png?ref_type=heads"); /* photo de couverture du site (body) */
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
