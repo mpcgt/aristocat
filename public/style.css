@@ -190,40 +190,25 @@ img {
 
 /* color selection */
 h1::selection {
-  background-color: #99a3a4;
+  background-color: #C0C0C0;
 }
 
 h2::selection {
-  background-color: #99a3a4;
+  background-color: #C0C0C0;
 }
 
 h3::selection {
-  background-color: #99a3a4;
+  background-color: #C0C0C0;
 }
 
 h4::selection {
-  background-color: #99a3a4;
+  background-color: #C0C0C0;
 }
 
 h5::selection {
-  background-color: #99a3a4;
+  background-color: #C0C0C0;
 }
 
 h6::selection {
-  background-color: #99a3a4;
-}
-
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #99a3a4;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #000000;
-  border-radius: 50px;
+  background-color: #C0C0C0;
 }
