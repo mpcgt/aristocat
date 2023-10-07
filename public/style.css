@@ -295,27 +295,27 @@ img {
 
 /* color selection */
 h1::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 h2::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 h3::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 h4::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 h5::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 h6::selection {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 /* ScrollBar */
