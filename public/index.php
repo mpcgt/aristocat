@@ -12,6 +12,7 @@ require('./config.php');
     
     <h1>Bienvenue !</h1>
 
-    ...
+    <p>Texte</p>
+    
 </body>
 </html>
