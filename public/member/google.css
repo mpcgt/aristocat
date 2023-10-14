@@ -378,10 +378,11 @@ body {
     background-color: #555;
   }
 
+  /* Déco dans la page google.html */
   .joli {
     padding: 1em;
     width: 100%;
-    height: 200px;
+    height: 600px;
     box-sizing: border-box;
   
     /* La couche la plus basse sera
