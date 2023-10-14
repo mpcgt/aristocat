@@ -1,15 +1,122 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- configuration du site -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X46PB19X0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+     gtag('config', 'G-6X46PB19X0');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="member.css">
+
+    <!-- nom de l'onglet -->
+    <title>Votre compte</title>
+
+     <!-- icône du onglet -->
+<link rel="icon" href="https://gitlab.com/aristocat/artistocatt/-/raw/master/public/medias/presentation/pdp.jpg">
+</head>
+
+<body>
+
+	<header class="main-head">
+		<nav>
+			<h1 id="logo">Aristocat<sup> Beta</sup></h1>
+			<ul>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="#" onclick="alert('Cette fonctionalité sera bientôt disponible!')">Bientôt</a></li>
+				<li><a href="about.html">À propos</a></li>
+        <li><a href="#" onclick="alert('Êtes-vous sûr de vouloir déconnecter votre compte Aristocat ?')" href="deconnexion.php">Se déconnecter</a></li>
+			</ul>
+		</nav>
+	</header>
+  </body>
+
 <head>
-  <title>Espace membre</title>
+  <title>Votre compte</title>
   <link rel="stylesheet" href="member.css">
 </head>
 <body>
   <div class="container">
-    <h1>Espace membre</h1>
+    <h1>Votre compte</h1>
     <p>Bienvenue sur votre espace membre.</p>
-    <a href="deconnexion.php">Se déconnecter</a>
   </div>
   <script src="member.js"></script>
 </body>
+
+<center><h2>Les liens pour vous</h2></center>
+<br>
+<br>
+
+<center><button type="button" style="font: bold 25px Helvetica ; background-color:black ; color:white">
+  <a href="blog.html">Mon blog personnel</button></a></center>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<center><h2>Paramètres du compte</h2></center>
+<br>
+<br>
+
+<center><button type="button" style="font: bold 25px Helvetica ; background-color:black ; color:white">
+  <a href="privacy.html">Gérer votre compte</button></a></center>
+
+
+
+<footer>
+  <!-- supprimer les points -->
+  <style>
+    .nolist {
+      list-style: none;
+    }
+  </style>
+  <div class="content-footer">
+    <div class="bloc footer-services">
+      <h3><strong>🌍 Services</strong></h3>
+      <ul class="services-list">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#" onclick="alert('Cette fonctionalité sera bientôt disponible!')">Bientôt</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </div>
+
+    <div class="bloc footer-contact">
+      <h3><strong>🤝 Connect with me</strong></h3>
+      <ol class="nolist">
+      <li><a href="https://gitlab.com/aristocat" target="_blank"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white"></a></li>
+      <li><a href="https://www.twitch.tv/aristocatt_" target="_blank"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"></a></li>
+      <li><a href="hhtps://youtube.com/channel/Aristocatt" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a></li>
+      <li><img height="28" width="115" src="http://ForTheBadge.com/images/badges/built-with-love.svg"></li>
+      </ol>
+    </div>
+
+    <div class="bloc footer-schedule">
+      <h3><strong>🦊 GitLab</strong></h3>
+      <ul class="schedule-list">
+        <li><a href="https://gitlab.com/aristocat" style="color: #000000" target="_blank">My profile</a></li>
+        <li><a href="https://gitlab.com/aristocat/aristocatt" style="color: #000000" target="_blank">My project</a></li>
+      </ul>
+    </div>
+    </div>
+    </footer>
+
+<!-- Mode sombre darkmode.js-->
+<script src="https://cdn.jsdelivr.net/npm/drkmd-js/dist/drkmd-js.min.js" data-drkmd-attach></script>
+
+</body>
 </html>
+
