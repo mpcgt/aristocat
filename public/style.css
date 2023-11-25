@@ -52,7 +52,7 @@ body {
 nav {
   min-height: 10vh;
   display: flex;
-  align-items: center;
+  align-items: right;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -60,9 +60,9 @@ nav {
 
 nav ul {
   display: flex;
-  flex: 1 1 50rem;
+  flex: 1 1 40rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: right;
   list-style: none;
 }
 
