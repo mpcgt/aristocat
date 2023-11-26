@@ -340,7 +340,4 @@ h6::selection {
 }
 
 /* changer l'apparence du curseur */
-
-.my-cursor {	
-  cursor:url(public\medias\cursor\default\work.ani),auto;
-  }
+.cursor {cursor: url('public\medias\cursor\default\work.ani'), auto;}
