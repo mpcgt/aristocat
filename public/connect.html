@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Connexion</h1>
-  <form action="login.php" method="post">
+  <form action="connexion.php" method="post">
     <label for="username">Nom d'utilisateur</label>
     <input type="text" name="username" id="username">
     <label for="password">Mot de passe</label>
@@ -13,7 +13,7 @@
     <input type="submit" value="Se connecter">
   </form>
   <h1>Inscription</h1>
-  <form action="register.php" method="post">
+  <form action="inscription.php" method="post">
     <label for="username">Nom d'utilisateur</label>
     <input type="text" name="username" id="username">
     <label for="password">Mot de passe</label>
@@ -24,29 +24,3 @@
   </form>
 </body>
 </html>
-
-<?php
-// Connexion à la base de données
-$db = new PDO('mysql:host=localhost;dbname=ma_base_de_données', 'root', '');
-// Récupération des données du formulaire de connexion
-$username = $_POST['username'];
-$password = $_POST['password'];
-// Vérification des données du formulaire de connexion
-if (empty($username) || empty($password)) {
-  echo "Veuillez remplir tous les champs.";
-  exit;
-}
-// Requête SQL pour vérifier si l'utilisateur existe
-$sql = "SELECT * FROM users WHERE username = ? AND password = ?";
-$stmt = $db->prepare($sql);
-$stmt->execute([$username, $password]);
-// Vérification si l'utilisateur existe
-if ($stmt->rowCount() == 0) {
-  echo "Nom d'utilisateur ou mot de passe incorrect.";
-  exit;
-}
-// Récupération des données de l'utilisateur
-$user = $stmt->fetch();
-// Démarrage de la session
-session_start();
-// Stock
