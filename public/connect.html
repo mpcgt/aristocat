@@ -222,8 +222,23 @@ input[type=submit]:hover {
       <div class="col">
         <div class="fb-login-button" data-width="100" data-size="50" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true"></div>
          </a>
-         <a href="404.html" class="google btn"><i class="fa fa-google fa-fw">
-        </i> Se connecter avec Google
+         <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <body>
+          <a href="javascript:void(0);" onclick="gapi.signin.signIn()">
+            <img src="https://developers.google.com/identity/images/g-signin-button-small.png" alt="Google Sign-In">
+          </a>
+        
+          <script>
+            function onSignIn(event) {
+              // Traitez les informations de connexion de l'utilisateur.
+              var profile = event.profile;
+              console.log("Nom de l'utilisateur : " + profile.name);
+              console.log("Email de l'utilisateur : " + profile.email);
+            }
+        
+            gapi.signin.onSignIn(onSignIn);
+          </script>
+        </body>
         </a>
       </div>
 
