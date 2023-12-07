@@ -76,7 +76,7 @@ nav ul {
 .hero {
   min-height: 90vh;
   background: linear-gradient(rgb(0, 0, 0, 0.4), transparent),
-    url("https://gitlab.com/aristocat/artistocatt/-/raw/master/public/medias/presentation/welcome.png"); /* photo de couverture du site (body) */
+    url("https://gitlab.com/aristocat/artistocatt/-/raw/master/public/medias/presentation/Logo.png"); /* photo de couverture du site (body) */
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
@@ -398,4 +398,32 @@ body {
 }
 .login-form button:hover {
   background-color: #000000;
+}
+
+.container {
+  position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texte {
+  width: 1400px;
+  animation: ecriture 2s steps(22), animate .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+@keyframes ecriture {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes animate {
+  50% {
+    border-color: transparent
+  }
 }
